@@ -76,6 +76,20 @@ public class SnowMan {
     pop();
   }
   
+    public void drawButtons(){
+    push();
+    
+    float buttonSize = 0.25 * radiusMid;
+    
+    stroke(inverted);
+    strokeWeight(buttonSize);
+    
+    point(x, offsetMid);
+    point(x, offsetMid - (0.5 * radiusMid));
+    point(x, offsetMid + (0.5 * radiusMid));
+    
+    pop();
+  }
   public void drawNose(){
     push();
     
@@ -198,18 +212,5 @@ public class SnowMan {
     pop();
   }
   
-  public void drawButtons(){
-    push();
-    
-    float buttonSize = 0.25 * radiusMid;
-    
-    stroke(inverted);
-    strokeWeight(buttonSize);
-    
-    point(x, offsetMid);
-    point(x, offsetMid - (0.5 * radiusMid));
-    point(x, offsetMid + (0.5 * radiusMid));
-    
-    pop();
-  }
+ 
 }
